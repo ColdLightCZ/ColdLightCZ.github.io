@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+    <style>
         .center {
             text-align: center;
         }
@@ -18,16 +18,19 @@
             border: 1px solid black;
         }
         th, td {
-            border: 1px solid black;
+            border: 1px solid black;  
             text-align: center;
         }
         .quote-section {
-            border: 1px solid black;
             margin-top: 50px;
             width: 50%;
-        }
-        .quote-title, .quote-text {
-            margin-left: 25%;
+            /* 
+            Remove following two lines
+
+            margin-left:auto;    
+            margin-right:auto; 
+            
+            */
         }
     </style>
 </head>
@@ -50,18 +53,22 @@
     
     <div class="quote-section">
         <h2 class="quote-title">关于《逃离南国》</h2>
-        <p class="quote-text">《逃离南国》是由寒灯一人基于RPGMakerMZ制作的一款角色扮演游戏，<br>在游戏中，你将扮演一名南国学生，在一个游戏日的时间中探索这座学校，并尝试发现隐藏在学校之下的秘密<br>……</p>
+        <p class="quote-text">《逃离南国》是由寒灯一人基于RPGMakerMZ制作的一款角色扮演游戏<br>在游戏中，你将扮演一名南国学生，在一个游戏日的时间中探索这座学校，并尝试发现隐藏在学校之下的秘密……</p>
         
         <h2 class="quote-title">更新日志</h2>
+        <p class="quote-text">v0.3<br>待发布……</p>
         <p class="quote-text">v0.2<br>-修复了在德育处测量体温环节卡死的bug</p>
         <p class="quote-text">v0.1<br>-逃离南国demo测试版正式发布</p>
         
         <h2 class="quote-title">联系我</h2>
-        <p class="quote-text">E-mail:1246244065@qq.com / uid350979835@gmail.com<br>微信:ColdLightCZ（验证消息：逃离南国）<br>QQ：1246244065（验证消息：逃离南国）</p>
+        <p class="quote-text">E-mail:1246244065@qq.com / uid350979835@gmail.com<br>微信:ColdLightCZ（验证消息：逃离南国）<br>QQ：1246244065（验证消息：逃离南国）<br>注意：请在反馈bug时带上游戏截图，以便使沟通更有效率</p>
+        
+        <h2 id="funFactsTitle" class="quote-title">你知道吗</h2>
+        <p id="funFactsText" class="quote-text"></p>
     </div>
     
     <script>
-        let facts = ['南国曾经是深圳市公办高中里唯一一所一天有十节课的', 'v0.3更新是寒灯在得知南国最新消息后一怒之下做出来的更新', '这个游戏的灵感来自寒灯本人的舍友，只不过他把这个计划无限推迟了，于是寒灯就偷偷先做了出来……', '这个游戏灵感来源在游戏中充当了一定角色', '游戏内容基于寒灯本人经历制作，和寒灯一个班的可能更能get到其中的一些梗'];
+        let facts = ['南国曾经是深圳市公办高中里唯一一所一天有十节课的！', 'v0.3是寒灯在得知南国最新消息后一怒之下做出来的更新！', '这个游戏的灵感来自寒灯本人的舍友，只不过他把这个计划无限推迟了，于是寒灯就偷偷先做了出来……', '这个游戏灵感来源在游戏中充当了一定角色！', '游戏内容基于寒灯本人经历制作，和寒灯一个班的可能更能get到其中的一些梗。','算上这条，这里一共会刷新10条小知识！','试试给寒灯发送关于游戏内容的建议，说不定在下个版本就被加入游戏了呢！','这个网站源于寒灯的信息课作业，寒灯将其稍作修改后放到了GitHub上并搭建起了这个网站！','在所有的小知识中，只有两条不是以感叹号结尾的！','你可以向寒灯投稿小知识，你的投稿会被考虑加入这里！'];
         let factNumber = Math.floor(Math.random()*facts.length);
         document.getElementById('funFactsText').textContent = facts[factNumber];
     </script>
