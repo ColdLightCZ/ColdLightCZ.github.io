@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
+<style>
         .center {
             text-align: center;
         }
@@ -9,18 +9,20 @@
             font-size: 20%;
         }
         .quote-title {
-            font-size: 60%;
+            font-size: 50%;
         }
         table {
             width: 50%;
             margin-left:auto; 
             margin-right:auto;
+            border: 1px solid black;
         }
         th, td {
             border: 1px solid black;
             text-align: center;
         }
         .quote-section {
+            border: 1px solid black;
             margin-top: 50px;
             width: 50%;
         }
@@ -57,5 +59,11 @@
         <h2 class="quote-title">联系我</h2>
         <p class="quote-text">E-mail:1246244065@qq.com / uid350979835@gmail.com<br>微信:ColdLightCZ（验证消息：逃离南国）<br>QQ：1246244065（验证消息：逃离南国）</p>
     </div>
+    
+    <script>
+        let facts = ['南国曾经是深圳市公办高中里唯一一所一天有十节课的', 'v0.3更新是寒灯在得知南国最新消息后一怒之下做出来的更新', '这个游戏的灵感来自寒灯本人的舍友，只不过他把这个计划无限推迟了，于是寒灯就偷偷先做了出来……', '这个游戏灵感来源在游戏中充当了一定角色', '游戏内容基于寒灯本人经历制作，和寒灯一个班的可能更能get到其中的一些梗'];
+        let factNumber = Math.floor(Math.random()*facts.length);
+        document.getElementById('funFactsText').textContent = facts[factNumber];
+    </script>
 </body>
 </html>
